@@ -17,4 +17,4 @@ struct SwiftUIMemoApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
-}
+} 

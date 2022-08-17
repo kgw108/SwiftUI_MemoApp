@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B55757D28AD1EA50090A6AA /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55757C28AD1EA50090A6AA /* Memo.swift */; };
+		1B55757F28AD1F810090A6AA /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55757E28AD1F810090A6AA /* MemoStore.swift */; };
 		1BDC009428AD1AD200311232 /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC009328AD1AD200311232 /* SwiftUIMemoApp.swift */; };
-		1BDC009628AD1AD200311232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC009528AD1AD200311232 /* ContentView.swift */; };
 		1BDC009828AD1AD200311232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDC009728AD1AD200311232 /* Assets.xcassets */; };
 		1BDC009B28AD1AD200311232 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDC009A28AD1AD200311232 /* Preview Assets.xcassets */; };
 		1BDC009D28AD1AD200311232 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC009C28AD1AD200311232 /* Persistence.swift */; };
@@ -17,9 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B55757C28AD1EA50090A6AA /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		1B55757E28AD1F810090A6AA /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		1BDC009028AD1AD200311232 /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDC009328AD1AD200311232 /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
-		1BDC009528AD1AD200311232 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BDC009728AD1AD200311232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BDC009A28AD1AD200311232 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BDC009C28AD1AD200311232 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -61,7 +63,6 @@
 				1BDC00A928AD1B1A00311232 /* CoreData */,
 				1BDC009328AD1AD200311232 /* SwiftUIMemoApp.swift */,
 				1BDC00A628AD1AFE00311232 /* MainListView.swift */,
-				1BDC009528AD1AD200311232 /* ContentView.swift */,
 				1BDC009728AD1AD200311232 /* Assets.xcassets */,
 				1BDC009928AD1AD200311232 /* Preview Content */,
 			);
@@ -79,6 +80,8 @@
 		1BDC00A828AD1B0200311232 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
+				1B55757C28AD1EA50090A6AA /* Memo.swift */,
+				1B55757E28AD1F810090A6AA /* MemoStore.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -163,10 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BDC00A728AD1AFE00311232 /* MainListView.swift in Sources */,
+				1B55757F28AD1F810090A6AA /* MemoStore.swift in Sources */,
 				1BDC009D28AD1AD200311232 /* Persistence.swift in Sources */,
 				1BDC00A028AD1AD200311232 /* SwiftUIMemo.xcdatamodeld in Sources */,
-				1BDC009628AD1AD200311232 /* ContentView.swift in Sources */,
 				1BDC009428AD1AD200311232 /* SwiftUIMemoApp.swift in Sources */,
+				1B55757D28AD1EA50090A6AA /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
