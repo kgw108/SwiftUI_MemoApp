@@ -16,7 +16,11 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { memo in
-                MemoCell(memo: memo)
+                NavigationLink{
+                    DetailView(memo: memo)
+                } label: {
+                    MemoCell(memo: memo)
+                }
             }
             .listStyle(.plain)
             .navigationTitle("내 메모") // NavigationView에 모디파이어(메소드) 추가
@@ -24,7 +28,7 @@ struct MainListView: View {
                 Button {
                     showComposer = true
                 } label: {
-                    Image(systemName: "plus") 
+                    Image(systemName: "plus")
                 }
             }
             .sheet(isPresented: $showComposer) {
