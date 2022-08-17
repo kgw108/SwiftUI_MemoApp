@@ -14,15 +14,7 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { memo in
-                VStack(alignment: .leading) {
-                    Text(memo.content)
-                        .font(.body)
-                        .lineLimit(1) // 텍스트 최대 1줄만 나오게
-                    
-                    Text(memo.insertData, style: .date)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
+                MemoCell(memo: memo)
             }
             .listStyle(.plain)
             .navigationTitle("내 메모") // NavigationView에 모디파이어(메소드) 추가
@@ -36,3 +28,4 @@ struct MainListView_Previews: PreviewProvider {
             .environmentObject(MemoStore())//프리뷰에서 사용할 커스텀 공유 데이터 따로 등록!
     }
 }
+
